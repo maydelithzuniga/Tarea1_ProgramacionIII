@@ -123,8 +123,6 @@ Tensor& Tensor::operator=(const Tensor& other)
     {
         delete[] data;
     }
-
-    delete[] data;
     shape = other.shape;
     total_size = other.total_size;
     is_view = false;
@@ -145,7 +143,6 @@ Tensor& Tensor::operator=(Tensor&& other) noexcept
     {
         delete[] data;
     }
-    delete[] data;
     shape = other.shape;
     total_size = other.total_size;
     data = other.data;
