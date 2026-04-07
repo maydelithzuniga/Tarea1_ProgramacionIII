@@ -181,14 +181,6 @@ Tensor++
 
 ---
 
-## Limitaciones
-
-* Soporte máximo de 3 dimensiones
-* `matmul` limitado a tensores 2D
-* `view` comparte memoria, lo que puede requerir cuidado en el manejo del ciclo de vida
-
----
-
 ## Requisitos cumplidos
 
 El proyecto incluye:
